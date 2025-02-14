@@ -8,6 +8,8 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import asyncio
+import os
+import re
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     # First message
