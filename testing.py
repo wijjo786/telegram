@@ -47,8 +47,11 @@ def main() -> None:
     app = Application.builder().token("7916200857:AAGx_l-XY7a_h6ei0p1rwqbKg4cXLH7MvOo").build()
 
     # Add handlers
+    pattern = re.compile(r'\b(ready|install)\b', re.IGNORECASE)
+
+# Add handlers
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(MessageHandler(filters.Regex(r'\b(ready|install)\b', flags=re.IGNORECASE), handle_ready))
+    app.add_handler(MessageHandler(filters.Regex(pattern), handle_ready))
 
     print("Bot is running...")
     app.run_polling()
