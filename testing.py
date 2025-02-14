@@ -16,7 +16,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Hello Dear 🥰! Welcome to Phantom AI Trading with Coach Rachel. I'm excited to help you achieve your financial dreams💸🤑😊")
 
     # Wait 6 seconds
-    await asyncio.sleep(15)
+    await asyncio.sleep(6)
 
     # Second message with community button
     community_keyboard = [[InlineKeyboardButton("Join Free Community", url="https://t.me/rachelphantomai")]]
