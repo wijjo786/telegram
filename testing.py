@@ -44,7 +44,7 @@ async def handle_ready(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 def main() -> None:
     # Replace with your bot token
-    app = Application.builder().token("7916200857:AAGx_l-XY7a_h6ei0p1rwqbKg4cXLH7MvOo").build()
+    app = Application.builder().token("7666959540:AAG2Nao7FKM4GPR0XIE_AVHU_oqZRNmCLpo").build()
 
     # Add handlers
     pattern = re.compile(r'\b(ready|install)\b', re.IGNORECASE)
